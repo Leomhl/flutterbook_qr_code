@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: new Text("Texto do QR Code"),
           content: new Text(qrtext),
           actions: <Widget>[
-            new FlatButton(
+            ElevatedButton(
               child: new Text("Fechar"),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -64,11 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            RaisedButton(
+            ElevatedButton(
               child: Text('Ler QR Code'),
               onPressed: () {
                 _captureQR();
